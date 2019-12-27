@@ -37,7 +37,7 @@ void dump(vector<vector<string> > v) {
     //outfile.open("result.txt", ios::out);
     
     fstream out;
-    out.open("C:\\Users\\user\\Desktop\\result.txt", ios::out);
+    out.open("C_C++_Projects\\CPP_files\\parsing\\res.txt", ios::out);
     
     for(auto list : v) {
         out << "[" << count++ << "] ";
@@ -73,18 +73,13 @@ int main() {
         for(auto g : grade_list) {
             
             if(code == atoi(g.at(0).c_str()) ) {
-                //if(atoi(g[1].c_str()) < 70)
-                  //  cout << to_string(code) << " " << g[0] << " " << g[1] << " " << s[0] << " " << s[1] << " " << s[2] << " " << s[3] << endl;
-                if(atoi(g[1].c_str()) >= 90)
-                    cout << to_string(code) << " " << g[0] << " " << g[1] << " " << s[0] << " " << s[1] << " " << s[2] << " " << s[3] << endl;
+                
                 tmp.push_back(to_string(code));
-                tmp.push_back(g[0]);
                 tmp.push_back(g[1]);
 
-                tmp.push_back(s[0]);
-                tmp.push_back(s[1]);
-                tmp.push_back(s[2]);
-                tmp.push_back(s[3]);
+                for(int i=0; i<4; i++) {
+                    tmp.push_back(s[i]);
+                }
                 result.push_back(tmp);
                 tmp.clear();
                 
