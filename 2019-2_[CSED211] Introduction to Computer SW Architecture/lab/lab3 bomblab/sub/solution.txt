@@ -1,0 +1,6 @@
+We have to stand with our North Korean allies.
+0 1 1 2 3 5
+7 319
+40 2
+gamfeg
+1 4 3 5 6 2

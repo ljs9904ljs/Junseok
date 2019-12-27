@@ -1,0 +1,164 @@
+#include<time.h>
+#include<iostream>
+#include<string>
+#include<vector>
+using namespace std;
+
+
+// Vector ADT based on the simple array-based implementation
+class Vector{	
+private:
+	/* BEGIN_YOUR_CODE */
+
+	/* END_YOUR_CODE */
+
+public:
+	void insert_front(int x){
+		/* BEGIN_YOUR_CODE */
+		
+		/* END_YOUR_CODE */
+	}
+
+	void delete_front(){
+		/* BEGIN_YOUR_CODE */
+
+		/* END_YOUR_CODE */
+	}
+
+	void insert_back(int x){
+		/* BEGIN_YOUR_CODE */
+		
+		/* END_YOUR_CODE */
+	}
+
+	void delete_back(){
+		/* BEGIN_YOUR_CODE */
+
+		/* END_YOUR_CODE */
+	}
+
+	void print_content(){
+		/* BEGIN_YOUR_CODE */
+
+		/* END_YOUR_CODE */	
+	}
+};
+
+// Vector ADT based on an Extenable Array used in a Circular fashion (EAC)
+class EAC_vector{	
+private:
+	/* BEGIN_YOUR_CODE */
+
+	/* END_YOUR_CODE */
+
+public:
+	void insert_front(int x){
+		/* BEGIN_YOUR_CODE */
+
+		/* END_YOUR_CODE */
+	}
+
+	void delete_front(){
+		/* BEGIN_YOUR_CODE */
+
+		/* END_YOUR_CODE */
+	}
+
+	void insert_back(int x){
+		/* BEGIN_YOUR_CODE */
+		
+		/* END_YOUR_CODE */
+	}
+
+	void delete_back(){
+		/* BEGIN_YOUR_CODE */
+
+		/* END_YOUR_CODE */
+	}
+
+	void print_content(){
+		/* BEGIN_YOUR_CODE */
+
+		/* END_YOUR_CODE */	
+	}
+};
+
+
+void Test(Vector v, EAC_vector eacv, int N, string test_type);
+
+
+int main(int argc, char** argv)
+{
+	int N = 10000;  
+	
+	if(argc==2)
+		N = atoi(argv[1]);
+
+	cout<<"N:\t"<<N<<"\n";
+
+	Vector v;
+	EAC_vector eacv;
+
+	Test(v, eacv, N, "front");
+	Test(v, eacv, N, "back");		
+
+	cout<<endl<<"End of test"<<endl;
+}
+
+
+void Test(Vector v, EAC_vector eacv, int N, string test_type){
+	if(test_type == "front")
+		cout << "\nTest case: insertion and deletion at FRONT\n\n";
+	else
+		cout << "\nTest case: insertion and deletion at BACK\n\n";
+
+	// Insertion of integers
+	double start_time;
+	double elapsed_time_vector = 0;
+	double elapsed_time_eacvector = 0;
+
+	for(int i=0; i<N; i++){
+		start_time = clock();
+		if(test_type == "front")
+			v.insert_front(i);
+		else
+			v.insert_back(i);
+		elapsed_time_vector += clock() - start_time;
+
+		start_time = clock();
+		if(test_type == "front")
+			eacv.insert_front(i);
+		else
+			eacv.insert_back(i);
+		elapsed_time_eacvector += clock() - start_time;
+
+	}
+
+	cout<<"\tInsertion time ratio (EAC_vector / vector):\t"<<elapsed_time_eacvector/elapsed_time_vector<<endl;
+
+	// Deletion of integers
+	elapsed_time_vector = 0;
+	elapsed_time_eacvector = 0;
+
+	for(int i=0; i<N; i++){
+		start_time = clock();
+		if(test_type == "front")
+			v.delete_front();
+		else
+			v.delete_back();
+		elapsed_time_vector += clock() - start_time;
+
+		start_time = clock();
+		if(test_type == "front")
+			eacv.delete_front();
+		else
+			eacv.delete_back();
+		elapsed_time_eacvector += clock() - start_time;
+
+	}
+
+	cout<<"\tDeletion time ratio (EAC_vector / vector):\t"<<elapsed_time_eacvector/elapsed_time_vector<<endl;
+
+	v.print_content();
+	eacv.print_content();
+}

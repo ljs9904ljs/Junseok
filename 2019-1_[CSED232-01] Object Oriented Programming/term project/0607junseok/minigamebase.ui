@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MiniGameBase</class>
+ <widget class="QWidget" name="MiniGameBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QPushButton" name="MiniGame_1">
+     <property name="text">
+      <string>스피드 퀴즈</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="MiniGame_2">
+     <property name="text">
+      <string>가위바위보</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="MiniGame_3">
+     <property name="text">
+      <string>돌림판</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="GoBack">
+     <property name="text">
+      <string>뒤로 가기</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

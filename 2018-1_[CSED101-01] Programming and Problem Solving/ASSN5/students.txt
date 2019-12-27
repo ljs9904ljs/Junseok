@@ -1,0 +1,6 @@
+Lee Chulhyung	m	179	chlee@gmail.com
+Lee Moonhyung	m	179	mhlee@gmail.com
+Yeo Jinyoung	m	180	jinyeo@gmail.com
+Lee Woongsae	m	173	wslee@gmail.com
+Choi Youjin	f	159	yjchoi@gmail.com
+Oh Youjeong	f	163	sudal@gmail.com

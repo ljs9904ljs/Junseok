@@ -1,0 +1,154 @@
+﻿#include<iostream>
+using namespace std;
+
+
+// Key: int, Value: char
+class Entry{
+/* BEGIN_YOUR_CODE */
+
+
+/* END_YOUR_CODE */
+};
+
+
+class Iterator{
+/* BEGIN_YOUR_CODE */
+
+
+/* END_YOUR_CODE */
+};
+
+
+
+
+// Ordered Map based on Binary Search Tree
+class OrderedMap_BST{        
+private:
+        /* BEGIN_YOUR_CODE */
+
+
+        /* END_YOUR_CODE */
+
+
+public:
+        // Constructor
+        /* BEGIN_YOUR_CODE */
+                
+        /* END_YOUR_CODE */
+
+
+        void put(int k, char v){
+                /* BEGIN_YOUR_CODE */
+                
+                /* END_YOUR_CODE */
+        }
+
+
+        void erase(int k){
+                /* BEGIN_YOUR_CODE */
+                
+                /* END_YOUR_CODE */
+        }
+
+
+        char firstEntry(){
+                // Return a value of the found iterator
+
+
+                /* BEGIN_YOUR_CODE */
+                
+                /* END_YOUR_CODE */
+        }
+
+
+        char ceilingEntry(int k){
+                // Return a value of the found iterator
+
+
+                /* BEGIN_YOUR_CODE */
+                
+                /* END_YOUR_CODE */
+        }
+
+
+        char lowerEntry(int k){
+                // Return a value of the found iterator
+
+
+                /* BEGIN_YOUR_CODE */
+                
+                /* END_YOUR_CODE */        
+        }
+
+
+        // Print keys in ascending order by tree search
+        void printKeys(){
+                /* BEGIN_YOUR_CODE */
+
+
+                /* END_YOUR_CODE */        
+        }
+
+
+};
+
+
+
+
+int main(int argc, char** argv)
+{
+        int keys[10] = {6,14,4,8,12,2,18,10,16,0};        
+        char values[10] = {'G', 'O', 'E', 'I', 'M', 'C', 'S', 'K', 'Q', 'A'};
+        int k1 = 7;
+        int k2 = 9;
+
+
+        OrderedMap_BST om = OrderedMap_BST();
+
+
+        for(int i=0; i<10; i++){
+                om.put(keys[i], values[i]);
+        }
+
+
+        om.printKeys();
+
+
+        cout << om.firstEntry() << endl;
+
+
+        cout << om.ceilingEntry(k1) << endl;
+
+
+        cout << om.lowerEntry(k1) << endl;
+
+
+        for(int i=0; i<5; i++){
+                om.erase(keys[i]);
+        }
+
+
+        om.printKeys();
+
+
+        cout << om.firstEntry() << endl;
+
+
+        cout << om.ceilingEntry(k2) << endl;
+
+
+        cout << om.lowerEntry(k2) << endl;
+
+
+
+
+        for(int i=5; i<10; i++){
+                om.erase(keys[i]);
+        }
+
+
+        om.printKeys();
+
+
+        cout<<endl<<"End of test"<<endl;
+}

@@ -1,0 +1,37 @@
+<RCC>
+    <qresource prefix="/item">
+        <file>image/item/Decoration.png</file>
+        <file>image/item/Lotto.png</file>
+        <file>image/item/Clover.png</file>
+        <file>image/item/AirPlane.png</file>
+        <file>image/item/Bicycle.png</file>
+        <file>image/item/Calculus.png</file>
+        <file>image/item/ColdMedicine.png</file>
+        <file>image/item/Effort.png</file>
+        <file>image/item/Ginseng.png</file>
+        <file>image/item/Peptic.png</file>
+        <file>image/item/SleepingPill.png</file>
+        <file>image/item/Steroid.png</file>
+        <file>image/item/Vita500.png</file>
+    </qresource>
+    <qresource prefix="/myWindow">
+        <file>image/window_images/title.png</file>
+        <file>image/window_images/inventory.png</file>
+        <file>image/window_images/market.png</file>
+        <file>image/window_images/mini_game.png</file>
+        <file>image/window_images/quit.png</file>
+        <file>image/window_images/save.png</file>
+        <file>image/window_images/sleep.png</file>
+        <file>image/window_images/DEX.png</file>
+        <file>image/window_images/INT.png</file>
+        <file>image/window_images/LUX.png</file>
+        <file>image/window_images/STR.png</file>
+    </qresource>
+    <qresource prefix="/backgound">
+        <file>image/background image/moon.png</file>
+        <file>image/background image/sky.png</file>
+        <file>image/background image/sun.png</file>
+        <file>image/background image/wood.png</file>
+        <file>image/background image/hall_of_fame.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,30 @@
+#include<iostream>
+#include<string>
+#include<algorithm>
+
+using namespace std;
+#define MAX_CACHE 1000
+
+int cache[MAX_CACHE][MAX_CACHE];
+
+/* BEGIN_YOUR_CODE */
+int LCS(string& str1, string& str2) {...}
+/* END_YOUR_CODE */
+
+int main()
+{
+	string str1, str2;
+
+	cout << "Enter first string   ";
+	getline(cin, str1);
+
+	cout << "Enter second string   ";
+	getline(cin, str2);
+
+	int len1 = str1.length();  //length of str1 
+	int len2 = str2.length();  //length of str2 
+
+	printf("Length of longest common subsequence is %d \n", LCS(str1, str2));
+
+	return 0;
+}

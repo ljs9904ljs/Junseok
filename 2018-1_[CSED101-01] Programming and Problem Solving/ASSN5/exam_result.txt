@@ -1,0 +1,7 @@
+Hong Gildong	92	94	gildong@gmail.com
+Lee Chulhyung	68	73	chlee@gmail.com
+Lee Moonhyung	65	71	mhlee@gmail.com
+Yeo Jinyoung	100	100	jinyeo@gmail.com
+Lee Woongsae	82	84	wslee@gmail.com
+Choi Youjin	45	47	yjchoi@gmail.com
+Oh Youjeong	78	63	sudal@gmail.com
