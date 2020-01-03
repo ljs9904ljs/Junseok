@@ -2,11 +2,30 @@
 #include<stdlib.h>
 #include<string.h>
 
+#define MAX 100
+
+#define PI 3.141592
+// 위의 #define은 원주율을 표현해놓은 거에요.
+//ㄴㅇㄻㄴㅇㄻㄴㅇㄹ
+/*
+ * ㅇㄻㄴㅇㄻ
+ * ㅁㄴㅇㄻㄹ
+ * 
+ * 
+ */
+
+0101
+8비트 == 1바이트(byte)
+
+
 
 typedef struct node {
     int start;
     int end;
 } node;
+
+
+
 
 void printList(node* list, int n) {
     for(int i=0;i<n;i++) {
@@ -20,6 +39,11 @@ void printList(node* list, int n) {
 int main() {
     int n;
     scanf("%d", &n);
+
+    printf("%d", MAX);
+    printf("hello wolrd!");
+
+    
 
     node* list = (node*)malloc(sizeof(node)*n);
 

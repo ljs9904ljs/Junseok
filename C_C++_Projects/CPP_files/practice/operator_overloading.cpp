@@ -6,13 +6,9 @@
 
 
 #include <iostream>
-#include <typeinfo>
-
-#define makechar(x) #x
-#define paster( n ) printf_s( "token" #n " = %d", token##n )
 
 using namespace std;
-/*
+
 class Complex {
 private:
     double real;
@@ -34,29 +30,28 @@ public:
     void dump() {
         cout << real << "+" << imag << "i" << endl;
     }
-    Complex operator+(Complex& src) {
-        Complex v(real + src.real, imag + src.imag );
+    Complex operator+(const Complex &c) {
+        Complex v(real + c.real, imag + c.imag);
         return v;
     }
 };
-*/
+
+
+void func(Complex c) {
+    cout << "* start of func *" << endl;
+    c.dump();
+    cout << "* end of func *" << endl;
+}
+
 
 int main() {
-    //Complex a, c1(13.2, 14.4);
+    func({20.0,23.3}); // convert constructor , braced-init-list
 
+    Complex c1,c2(5.3, 7.2);
+    c1 = c2 + 5;
+    c1.dump();
 
     
-    if(typeid(makechar(c)) == typeid(string)) {
-        cout << "equal!" << endl;
-    }
-    else if(typeid(makechar(c)) == typeid(const char *)) {
-        cout << "const char * equal!" << endl;
-    }
-    else {
-        cout << "diff!" << endl;
-    }
-
-    cout << typeid(makechar(c)).name() << endl;
 
 
 
